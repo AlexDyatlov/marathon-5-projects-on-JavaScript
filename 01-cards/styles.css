@@ -5,7 +5,56 @@
 }
 
 body {
-  font-family: 'Muli', sans-serif;
-  overflow: hidden;
   margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Muli', sans-serif;
+  background-color: #0c0c13;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  padding: 0 20px;
+}
+
+.slide {
+  position: relative;
+  margin: 0 10px;
+  flex: 1;
+  height: 80vh;
+  border-radius: 20px;
+  color: #ffffff;
+  background: center/cover no-repeat;
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+}
+
+.slide:hover {
+  opacity: 0.7;
+}
+
+.slide--active {
+  flex: 10;
+}
+
+.slide--active:hover {
+  opacity: initial;
+}
+
+.slide__title {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  font-size: 24px;
+  opacity: 0;
+}
+
+.slide--active .slide__title {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
 }
