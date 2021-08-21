@@ -2,15 +2,48 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
   <title>Слайдер | Проект 3</title>
 </head>
 
 <body>
-
+  <div class="container">
+    <div class="sidebar">
+      <div style="background-image: linear-gradient(174deg, #52a7c1 -15%, #2f3a35 106%);">
+        <h1>South of Switzerland</h1>
+        <p>Tessin, Switzerland</p>
+      </div>
+      <div style="background-image: linear-gradient(44deg, #000000 7%, #a2eef5 108%);">
+        <h1>South of Germany</h1>
+        <p>Bockhütte, Germany</p>
+      </div>
+      <div style="background-image: linear-gradient(320deg, #21d190 0%, #092c4e 74%);">
+        <h1>Cold night</h1>
+        <p>Thórsmörk, Iceland</p>
+      </div>
+      <div style="background-image: linear-gradient(315deg, #2f4353 0%, #d2ccc4 74%);">
+        <h1>Manhattan Skyline</h1>
+        <p>Brooklyn Bridge, New York City</p>
+      </div>
+    </div>
+    <div class="main-slide">
+      <div style=" background-image: url('https://images.unsplash.com/photo-1526604648377-1433c7c1f5b7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80')"></div>
+      <div style=" background-image: url('https://images.unsplash.com/photo-1488415032361-b7e238421f1b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=749&q=80')"></div>
+      <div style=" background-image: url('https://images.unsplash.com/photo-1475070929565-c985b496cb9f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80')"></div>
+      <div style=" background-image: url('https://images.unsplash.com/photo-1612438841196-fe16bf8246cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80')"></div>
+    </div>
+    <div class="controls">
+      <button class="down-button">
+        <i class="fas fa-arrow-down"></i>
+      </button>
+      <button class="up-button">
+        <i class="fas fa-arrow-up"></i>
+      </button>
+    </div>
+  </div>
   <script src="app.js"></script>
 </body>
 
